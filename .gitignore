@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Дані проєкту
+photos/*
+!photos/.gitkeep
+analysis/*
+!analysis/.gitkeep
+geo-sleuth/
+logs/
+
+# Системні файли
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

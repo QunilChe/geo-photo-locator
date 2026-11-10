@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Результат: {{ filename }}</h3>
+<div class='row'>
+  <div class='col-md-6'>
+    <img src='{{ url_for("photo_file", filename=filename) }}' class='img-fluid rounded shadow'>
+  </div>
+  <div class='col-md-6'>
+    <div class='card'><div class='card-body'>
+      <p id='loc-text'>Очікування...</p>
+      <div id='map' style='height:350px' class='mb-3'></div>
+      <div class='row g-2'>
+        <div class='col'><input id='lat' class='form-control' placeholder='Широта'></div>
+        <div class='col'><input id='lon' class='form-control' placeholder='Довгота'></div>
+        <div class='col-auto'><button id='confirm' class='btn btn-success'>Записати</button></div>
+      </div>
+    </div></div>
+  </div>
+</div>
+<script>
+  window.__FILENAME__ = '{{ filename }}';
+</script>
+{% endblock %}
