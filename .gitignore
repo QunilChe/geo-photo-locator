@@ -1,0 +1,15 @@
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+.env
+photos/
+analysis/
+logs/
+knowledge_base.json
+test_vision.py
+test_gemini.py
+test_api.py
+setup_env.py
+fix.py
